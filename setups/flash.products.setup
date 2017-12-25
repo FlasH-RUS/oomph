@@ -84,7 +84,7 @@
       <requirement
           name="pm.eclipse.editbox.feature.feature.group"/>
       <repository
-          url="http://editbox.sourceforge.net/updates"/>
+          url="http://www.nodeclipse.org/updates/"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
