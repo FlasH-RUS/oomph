@@ -2,8 +2,7 @@
 <setup:Index
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
-    name="Calypso">
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0">
   <discoverablePackage
       href="http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Git.ecore#/"/>
   <discoverablePackage
