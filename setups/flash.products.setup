@@ -148,10 +148,24 @@
       <setupTask
           xsi:type="setup:CompoundTask"
           predecessor="//@products[name='eclipse']/@setupTasks.8/@setupTasks.0"
-          name="org.eclipse.ui"/>
+          name="org.eclipse.ui">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.ui/KEY_CONFIGURATION_ID"
+            value="IntelliJIdeaKeymap4EclipseScheme"/>
+      </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"
-          name="org.eclipse.debug.ui"/>
+          name="org.eclipse.debug.ui">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.RelaunchAndTerminateLaunchAction"
+            value="true"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.UseContextualLaunch"
+            value="true"/>
+      </setupTask>
       <description>Uses https://github.com/IntelliJIdeaKeymap4Eclipse/IntelliJIdeaKeymap4Eclipse as a provider</description>
     </setupTask>
     <setupTask
@@ -218,18 +232,6 @@
       </annotation>
       <setupTask
           xsi:type="setup:CompoundTask"
-          name="org.eclipse.debug.ui">
-        <setupTask
-            xsi:type="setup:PreferenceTask"
-            key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.RelaunchAndTerminateLaunchAction"
-            value="true"/>
-        <setupTask
-            xsi:type="setup:PreferenceTask"
-            key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.UseContextualLaunch"
-            value="true"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup:CompoundTask"
           name="org.eclipse.jdt.ui">
         <setupTask
             xsi:type="setup:PreferenceTask"
@@ -271,14 +273,6 @@
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.typefilter.enabled"
             value="java.awt.*;"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup:CompoundTask"
-          name="org.eclipse.ui">
-        <setupTask
-            xsi:type="setup:PreferenceTask"
-            key="/instance/org.eclipse.ui/KEY_CONFIGURATION_ID"
-            value="IntelliJIdeaKeymap4EclipseScheme"/>
       </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"
