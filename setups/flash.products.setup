@@ -471,6 +471,13 @@
             url="http://dist.springsource.org/release/GRECLIPSE/e4.7"/>
         <description></description>
       </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Buildship">
+        <repository
+            url="http://download.eclipse.org/buildship/updates/e47/releases/2.x"/>
+        <description>Explicitly adds Buildshup update site to always get the latest updates</description>
+      </setupTask>
       <description>KN FN Calypso team Eclipse (Oxygen)</description>
     </version>
     <description></description>
