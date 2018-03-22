@@ -6,15 +6,10 @@
     xmlns:jdt="http://www.eclipse.org/oomph/setup/jdt/1.0"
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
-    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/jdt/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/JDT.ecore"
+    xmlns:workbench="http://www.eclipse.org/oomph/setup/workbench/1.0"
+    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/jdt/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/JDT.ecore http://www.eclipse.org/oomph/setup/workbench/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Workbench.ecore"
     name="ru.lonedeveloper.flash.products.calypso"
     label="FlasH's products">
-  <setupTask
-      xsi:type="setup:CompoundTask"
-      name="User Preferences">
-    <annotation
-        source="http://www.eclipse.org/oomph/setup/UserPreferences"/>
-  </setupTask>
   <setupTask
       xsi:type="setup:InstallationTask"
       id="installation"/>
@@ -76,12 +71,40 @@
           url="http://nodj.github.io/AutoDeriv/update"/>
     </setupTask>
     <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="MoreUnit">
-      <requirement
-          name="org.moreunit.feature.group"/>
-      <repository
-          url="https://moreunit.github.io/eclipse-update-site/"/>
+        xsi:type="setup:CompoundTask"
+        name="MoreUnit">
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="MoreUnit">
+        <requirement
+            name="org.moreunit.feature.group"/>
+        <repository
+            url="https://moreunit.github.io/eclipse-update-site/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="workbench:KeyBindingTask"
+          filter="(use.idea.keymap=false)"
+          keys="CTRL+SHIFT+T"
+          command="org.moreunit.core.commands.jumpCommand">
+        <context
+            id="org.eclipse.jdt.ui.javaEditorScope"/>
+        <context
+            id="org.eclipse.ui.textEditorScope"/>
+        <context/>
+      </setupTask>
+      <setupTask
+          xsi:type="workbench:KeyBindingTask"
+          predecessor="//@products[name='eclipse']/@setupTasks.8"
+          filter="(use.idea.keymap=true)"
+          scheme="IntelliJIdeaKeymap4EclipseScheme"
+          keys="CTRL+SHIFT+T"
+          command="org.moreunit.core.commands.jumpCommand">
+        <context
+            id="org.eclipse.jdt.ui.javaEditorScope"/>
+        <context
+            id="org.eclipse.ui.textEditorScope"/>
+        <context/>
+      </setupTask>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -128,16 +151,7 @@
           name="org.eclipse.ui"/>
       <setupTask
           xsi:type="setup:CompoundTask"
-          name="org.eclipse.debug.ui">
-        <setupTask
-            xsi:type="setup:PreferenceTask"
-            key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.RelaunchAndTerminateLaunchAction"
-            value="true"/>
-        <setupTask
-            xsi:type="setup:PreferenceTask"
-            key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.UseContextualLaunch"
-            value="true"/>
-      </setupTask>
+          name="org.eclipse.debug.ui"/>
       <description>Uses https://github.com/IntelliJIdeaKeymap4Eclipse/IntelliJIdeaKeymap4Eclipse as a provider</description>
     </setupTask>
     <setupTask
@@ -202,6 +216,18 @@
           <value>record</value>
         </detail>
       </annotation>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          name="org.eclipse.debug.ui">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.RelaunchAndTerminateLaunchAction"
+            value="true"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.UseContextualLaunch"
+            value="true"/>
+      </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"
           name="org.eclipse.jdt.ui">
