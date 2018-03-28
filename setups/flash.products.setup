@@ -172,6 +172,16 @@
             key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.UseContextualLaunch"
             value="true"/>
       </setupTask>
+      <setupTask
+          xsi:type="workbench:KeyBindingTask"
+          scheme="IntelliJIdeaKeymap4EclipseScheme"
+          keys="CTRL+F11"
+          command="org.eclipse.ui.window.nextPerspective"/>
+      <setupTask
+          xsi:type="workbench:KeyBindingTask"
+          scheme="IntelliJIdeaKeymap4EclipseScheme"
+          keys="CTRL+SHIFT+F11"
+          command="org.eclipse.ui.window.nextPerspective"/>
       <description>Uses https://github.com/IntelliJIdeaKeymap4Eclipse/IntelliJIdeaKeymap4Eclipse as a provider</description>
     </setupTask>
     <setupTask
