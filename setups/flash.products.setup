@@ -176,12 +176,16 @@
           xsi:type="workbench:KeyBindingTask"
           scheme="IntelliJIdeaKeymap4EclipseScheme"
           keys="CTRL+F11"
-          command="org.eclipse.ui.window.nextPerspective"/>
+          command="org.eclipse.ui.window.nextPerspective">
+        <context/>
+      </setupTask>
       <setupTask
           xsi:type="workbench:KeyBindingTask"
           scheme="IntelliJIdeaKeymap4EclipseScheme"
           keys="CTRL+SHIFT+F11"
-          command="org.eclipse.ui.window.nextPerspective"/>
+          command="org.eclipse.ui.window.nextPerspective">
+        <context/>
+      </setupTask>
       <description>Uses https://github.com/IntelliJIdeaKeymap4Eclipse/IntelliJIdeaKeymap4Eclipse as a provider</description>
     </setupTask>
     <setupTask
