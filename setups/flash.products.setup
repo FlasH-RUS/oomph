@@ -360,10 +360,6 @@
         <requirement
             name="org.eclipse.jpt.jaxb.feature.feature.group"/>
         <requirement
-            name="org.eclipse.jpt.jpa.eclipselink.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.jpt.jpa.feature.feature.group"/>
-        <requirement
             name="org.eclipse.jsf.feature.feature.group"/>
         <requirement
             name="org.eclipse.jst.common.fproj.enablement.jdt.feature.group"/>
@@ -397,8 +393,6 @@
             name="org.eclipse.m2e.wtp.feature.feature.group"/>
         <requirement
             name="org.eclipse.m2e.wtp.jaxrs.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.m2e.wtp.jpa.feature.feature.group"/>
         <requirement
             name="org.eclipse.m2e.wtp.jsf.feature.feature.group"/>
         <requirement
