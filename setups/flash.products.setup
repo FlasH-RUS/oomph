@@ -513,7 +513,7 @@
       </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Java EE Developers (no Data Tools, JPA, RSE and PDE)">
+          label="Eclipse IDE for Java EE Developers (no Data Tools, JPA, RSE, PDE and CloudFoundry)">
         <requirement
             name="epp.package.jee"
             versionRange="[4.8.0,5.0.0)"/>
@@ -525,10 +525,6 @@
             versionRange="[4.8.0,5.0.0)"/>
         <requirement
             name="org.eclipse.buildship.feature.group"/>
-        <requirement
-            name="org.eclipse.cft.server.core.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.cft.server.ui.feature.feature.group"/>
         <requirement
             name="org.eclipse.eclemma.feature.feature.group"/>
         <requirement
