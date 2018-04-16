@@ -513,7 +513,7 @@
       </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Java EE Developers (no Data Tools, JPA and RSE)">
+          label="Eclipse IDE for Java EE Developers (no Data Tools, JPA, RSE and PDE)">
         <requirement
             name="epp.package.jee"
             versionRange="[4.8.0,5.0.0)"/>
@@ -587,8 +587,6 @@
             name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
         <requirement
             name="org.eclipse.mylyn_feature.feature.group"/>
-        <requirement
-            name="org.eclipse.pde.feature.group"/>
         <requirement
             name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
         <requirement
