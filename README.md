@@ -15,7 +15,11 @@ Installing
 
 What's included
 ---------------
-1. Eclipse Oxygen for Java EE developers (w/o Data Tools) 
+1. Eclipse Oxygen/Photon for Java EE developers with the following plugins excluded:
+    * Data Tools
+    * Remote Systems Explorer (RSE)
+    * CloudFoundry support (CFT)
+    * Plug-in Development Environment (PDE)
 2. Lombok
 3. Spring Tools Suite
 4. Groovy Eclipse
