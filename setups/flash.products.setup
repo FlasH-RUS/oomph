@@ -568,8 +568,6 @@
         <requirement
             name="org.eclipse.m2e.wtp.jaxrs.feature.feature.group"/>
         <requirement
-            name="org.eclipse.m2e.wtp.jpa.feature.feature.group"/>
-        <requirement
             name="org.eclipse.m2e.wtp.jsf.feature.feature.group"/>
         <requirement
             name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
