@@ -100,7 +100,7 @@
       </setupTask>
       <setupTask
           xsi:type="workbench:KeyBindingTask"
-          predecessor="//@products[name='eclipse']/@setupTasks.8"
+          predecessor="//@products[name='eclipse']/@setupTasks.7"
           filter="(use.idea.keymap=true)"
           scheme="IntelliJIdeaKeymap4EclipseScheme"
           keys="CTRL+SHIFT+T"
@@ -131,15 +131,6 @@
           url="http://eclipse.schedenig.name"/>
     </setupTask>
     <setupTask
-        xsi:type="setup.p2:P2Task"
-        filter=""
-        label="TM terminal">
-      <requirement
-          name="org.eclipse.tm.terminal.feature.feature.group"/>
-      <repository
-          url="http://download.eclipse.org/tm/terminal/marketplace"/>
-    </setupTask>
-    <setupTask
         xsi:type="setup:CompoundTask"
         filter="(use.idea.keymap=true)"
         name="Idea keymap">
@@ -153,7 +144,7 @@
       </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"
-          predecessor="//@products[name='eclipse']/@setupTasks.8/@setupTasks.0"
+          predecessor="//@products[name='eclipse']/@setupTasks.7/@setupTasks.0"
           name="org.eclipse.ui">
         <setupTask
             xsi:type="setup:PreferenceTask"
