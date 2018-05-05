@@ -409,8 +409,6 @@
         <requirement
             name="org.eclipse.rse.useractions.feature.group"/>
         <requirement
-            name="org.eclipse.tm.terminal.feature.feature.group"/>
-        <requirement
             name="org.eclipse.wst.common.fproj.feature.group"/>
         <requirement
             name="org.eclipse.wst.jsdt.chromium.debug.feature.feature.group"/>
@@ -576,8 +574,6 @@
             name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
         <requirement
             name="org.eclipse.recommenders.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.tm.terminal.feature.feature.group"/>
         <requirement
             name="org.eclipse.wst.common.fproj.feature.group"/>
         <requirement
