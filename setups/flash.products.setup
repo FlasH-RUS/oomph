@@ -70,6 +70,14 @@
         location="${jre.location-1.8}"/>
     <setupTask
         xsi:type="setup.p2:P2Task"
+        label="DevStyle">
+      <requirement
+          name="com.genuitec.eclipse.theming.feature.feature.group"/>
+      <repository
+          url="https://www.genuitec.com/updates/devstyle/ci/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
         label="AutoDeriv">
       <requirement
           name="net.nodj.AutoDerivFeature.feature.group"/>
@@ -100,7 +108,7 @@
       </setupTask>
       <setupTask
           xsi:type="workbench:KeyBindingTask"
-          predecessor="//@products[name='eclipse']/@setupTasks.7"
+          predecessor="//@products[name='eclipse']/@setupTasks.8"
           filter="(use.idea.keymap=true)"
           scheme="IntelliJIdeaKeymap4EclipseScheme"
           keys="CTRL+SHIFT+T"
@@ -144,7 +152,7 @@
       </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"
-          predecessor="//@products[name='eclipse']/@setupTasks.7/@setupTasks.0"
+          predecessor="//@products[name='eclipse']/@setupTasks.8/@setupTasks.0"
           name="org.eclipse.ui">
         <setupTask
             xsi:type="setup:PreferenceTask"
@@ -505,13 +513,13 @@
           label="Eclipse IDE for Java EE Developers (no Data Tools, JPA, RSE, PDE and CloudFoundry)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.8.0,5.0.0)"/>
+            versionRange="[4.8.0,4.9.0)"/>
         <requirement
             name="org.eclipse.platform.feature.group"
-            versionRange="[4.8.0,5.0.0)"/>
+            versionRange="[4.8.0,4.9.0)"/>
         <requirement
             name="org.eclipse.rcp.feature.group"
-            versionRange="[4.8.0,5.0.0)"/>
+            versionRange="[4.8.0,4.9.0)"/>
         <requirement
             name="org.eclipse.buildship.feature.group"/>
         <requirement
