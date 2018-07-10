@@ -11,12 +11,6 @@
     name="ru.lonedeveloper.flash.products.calypso"
     label="FlasH's products">
   <setupTask
-      xsi:type="setup:CompoundTask"
-      name="User Preferences">
-    <annotation
-        source="http://www.eclipse.org/oomph/setup/UserPreferences"/>
-  </setupTask>
-  <setupTask
       xsi:type="setup:InstallationTask"
       id="installation"/>
   <setupTask
@@ -239,6 +233,10 @@
             key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.UseContextualLaunch">
           <value>record</value>
         </detail>
+        <detail
+            key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.sortLibraryEntriesByName">
+          <value>record</value>
+        </detail>
       </annotation>
       <setupTask
           xsi:type="setup:CompoundTask"
@@ -283,6 +281,10 @@
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.typefilter.enabled"
             value="java.awt.*;"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.sortLibraryEntriesByName"
+            value="true"/>
       </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"
