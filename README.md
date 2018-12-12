@@ -3,10 +3,10 @@ FlasH's eclipse setup
 
 Setting up the installer
 ------------------------
-* In case you're on Windows: just download the installer from here (/installers/eclipse-inst-64-flash.exe) and run it.
+* In case you're on Windows: just download the installer from here (/eclipse-inst-64.exe) and run it.
 * In case you're on a different platform:
   1. Download [eclipse installer](https://wiki.eclipse.org/Eclipse_Installer) and unpack it.
-  2. Edit `eclipse-inst.ini` in the unpacked root adding the following line to the very end: `-Doomph.redirection.setups=http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/->https://raw.githubusercontent.com/FlasH-RUS/oomph/master/setups/`
+  2. Edit `eclipse-inst.ini` in the unpacked root adding the following line to the very end: `-Doomph.redirection.setups=index:/->https://raw.githubusercontent.com/FlasH-RUS/oomph/master/setups/`
 
 Installing
 ---------------------------------
