@@ -21,7 +21,7 @@
         url="${oomph.update.url}"/>
   </setupTask>
   <product name="eclipse"
-      label="FlasH's eclipse">
+      label="Eclipse for Java">
     <annotation
         source="http://www.eclipse.org/oomph/setup/BrandingInfo">
       <detail
@@ -317,7 +317,7 @@
         requiredJavaVersion="1.8">
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Java EE Developers (no Data Tools and JPA)">
+          label="Eclipse IDE for Java EE Developers (w/o Data Tools and JPA)">
         <requirement
             name="epp.package.jee"
             versionRange="[4.7.0,4.8.0)"/>
@@ -503,7 +503,7 @@
       </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Java EE Developers (no Data Tools, JPA, RSE, PDE and CloudFoundry)">
+          label="Eclipse IDE for Java EE Developers (w/o Data Tools, JPA, RSE, PDE and CloudFoundry)">
         <requirement
             name="epp.package.jee"
             versionRange="[4.8.0,4.9.0)"/>
@@ -670,7 +670,7 @@
       </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Java EE Developers (JPA, RSE, PDE and CloudFoundry)">
+          label="Eclipse IDE for Java EE Developers (w/o JPA, RSE, PDE and CloudFoundry)">
         <requirement
             name="epp.package.jee"
             versionRange="[4.9.0,4.10.0)"/>
@@ -902,7 +902,7 @@
         <description>Explicitly adds Buildshup update site to always get the latest updates</description>
       </setupTask>
     </version>
-    <description></description>
+    <description>A basic Eclipse for Java EE w/o JPA, RSE, PDE and CloudFoundry, but with Lombok, STS and Groovy Eclipse added. IDEA keymap is an optional bonus.</description>
   </product>
   <description></description>
 </setup:ProductCatalog>
