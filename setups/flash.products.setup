@@ -476,6 +476,18 @@
       </annotation>
       <setupTask
           xsi:type="setup:CompoundTask"
+          name="org.eclipse.debug.ui">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.RelaunchAndTerminateLaunchAction"
+            value="true"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.UseContextualLaunch"
+            value="true"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup:CompoundTask"
           name="org.eclipse.jdt.ui">
         <setupTask
             xsi:type="setup:PreferenceTask"
@@ -485,6 +497,10 @@
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.ui/content_assist_disabled_computers"
             value="org.eclipse.jdt.ui.templateProposalCategory${0x0}org.eclipse.jdt.ui.swtProposalCategory${0x0}org.eclipse.jdt.ui.javaNoTypeProposalCategory${0x0}org.eclipse.jdt.ui.javaTypeProposalCategory${0x0}org.eclipse.jdt.ui.textProposalCategory${0x0}org.eclipse.jdt.ui.javaAllProposalCategory${0x0}org.eclipse.jpt.jaxb.ui.jaxbCompletionProposals${0x0}org.eclipse.jst.ws.jaxws.ui.jaxwsProposalComputer${0x0}org.eclipse.mylyn.java.ui.javaAllProposalCategory${0x0}org.eclipse.pde.api.tools.ui.apitools_proposal_category${0x0}org.eclipse.recommenders.chain.rcp.proposalCategory.chain${0x0}org.eclipse.recommenders.calls.rcp.proposalCategory.templates${0x0}"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.jdt.ui/content_assist_favorite_static_members"
+            value="org.mockito.Matchers.*;org.mockito.Mockito.*;org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestBuilders.*;org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.*;org.springframework.security.test.web.servlet.response.SecurityMockMvcResultMatchers.*;org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.*;org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.*;org.springframework.test.web.client.match.MockRestRequestMatchers.*;org.springframework.test.web.client.response.MockRestResponseCreators.*;org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;org.hamcrest.CoreMatchers.*;org.junit.Assert.*;org.hamcrest.Matchers.*;org.hamcrest.MatcherAssert.*"/>
         <setupTask
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.ui/formatter_profile"
@@ -777,18 +793,6 @@
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.wst.xml.core/lineWidth"
             value="128"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup:CompoundTask"
-          name="org.eclipse.debug.ui">
-        <setupTask
-            xsi:type="setup:PreferenceTask"
-            key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.RelaunchAndTerminateLaunchAction"
-            value="true"/>
-        <setupTask
-            xsi:type="setup:PreferenceTask"
-            key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.UseContextualLaunch"
-            value="true"/>
       </setupTask>
     </setupTask>
     <version
