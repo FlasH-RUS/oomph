@@ -503,6 +503,10 @@
             value="org.mockito.Matchers.*;org.mockito.Mockito.*;org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestBuilders.*;org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.*;org.springframework.security.test.web.servlet.response.SecurityMockMvcResultMatchers.*;org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.*;org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.*;org.springframework.test.web.client.match.MockRestRequestMatchers.*;org.springframework.test.web.client.response.MockRestResponseCreators.*;org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;org.hamcrest.CoreMatchers.*;org.junit.Assert.*;org.hamcrest.Matchers.*;org.hamcrest.MatcherAssert.*"/>
         <setupTask
             xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.jdt.ui/editor_codemining_enabled"
+            value="true"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.ui/formatter_profile"
             value="_WebStandard Clean Code"/>
         <setupTask
