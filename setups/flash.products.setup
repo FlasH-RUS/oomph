@@ -1578,46 +1578,6 @@
         <description>Explicitly adds Buildshup update site to always get the latest updates</description>
       </setupTask>
       <setupTask
-          xsi:type="setup:CompoundTask"
-          name="Spring Tools Suite">
-        <setupTask
-            xsi:type="setup.p2:P2Task"
-            label="Spring Tools Suite">
-          <requirement
-              name="org.springframework.ide.eclipse.feature.feature.group"/>
-          <requirement
-              name="org.springframework.ide.eclipse.boot.feature.feature.group"/>
-          <requirement
-              name="org.springframework.ide.eclipse.aop.feature.feature.group"/>
-          <requirement
-              name="org.springframework.ide.eclipse.autowire.feature.feature.group"/>
-          <requirement
-              name="org.springframework.ide.eclipse.batch.feature.feature.group"/>
-          <requirement
-              name="org.springframework.ide.eclipse.integration.feature.feature.group"/>
-          <requirement
-              name="org.springframework.ide.eclipse.security.feature.feature.group"/>
-          <requirement
-              name="org.springframework.ide.eclipse.data.feature.feature.group"/>
-          <requirement
-              name="org.springframework.ide.eclipse.webflow.feature.feature.group"/>
-          <requirement
-              name="org.springframework.ide.eclipse.mylyn.feature.feature.group"/>
-          <requirement
-              name="org.springsource.ide.eclipse.commons.quicksearch.feature.feature.group"/>
-          <repository
-              url="http://download.springsource.com/release/TOOLS/update/e4.10/"/>
-        </setupTask>
-        <setupTask
-            xsi:type="workbench:KeyBindingTask"
-            filter="(use.idea.keymap=true)"
-            scheme="IntelliJIdeaKeymap4EclipseScheme"
-            keys="CTRL+SHIFT+Q"
-            command="org.springsource.ide.eclipse.quicksearch.commands.quicksearchCommand">
-          <context/>
-        </setupTask>
-      </setupTask>
-      <setupTask
           xsi:type="setup.p2:P2Task"
           label="Code Recommenders">
         <requirement
