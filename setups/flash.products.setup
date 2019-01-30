@@ -1589,6 +1589,30 @@
         <repository
             url="https://download.eclipse.org/recommenders/updates/stable/"/>
       </setupTask>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          name="Spring Tools Suite">
+        <setupTask
+            xsi:type="setup.p2:P2Task"
+            label="Spring Tools Suite">
+          <requirement
+              name="org.springframework.boot.ide.main.feature.feature.group"/>
+          <requirement
+              name="org.springframework.tooling.boot.ls.feature.feature.group"/>
+          <requirement
+              name="org.springsource.ide.eclipse.commons.quicksearch.feature.feature.group"/>
+          <repository
+              url="http://download.springsource.com/release/TOOLS/sts4/update/e4.10/"/>
+        </setupTask>
+        <setupTask
+            xsi:type="workbench:KeyBindingTask"
+            filter="(use.idea.keymap=true)"
+            scheme="IntelliJIdeaKeymap4EclipseScheme"
+            keys="CTRL+SHIFT+Q"
+            command="org.springsource.ide.eclipse.quicksearch.commands.quicksearchCommand">
+          <context/>
+        </setupTask>
+      </setupTask>
     </version>
     <description>A basic Eclipse for Java EE w/o JPA, RSE, PDE and CloudFoundry, but with Lombok, STS and Groovy Eclipse added. IDEA keymap is an optional bonus.</description>
   </product>
