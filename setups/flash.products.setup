@@ -1601,6 +1601,10 @@
               name="org.springframework.tooling.boot.ls.feature.feature.group"/>
           <requirement
               name="org.springsource.ide.eclipse.commons.quicksearch.feature.feature.group"/>
+          <requirement
+              name="org.springframework.boot.ide.branding.feature.feature.group"/>
+          <requirement
+              name="org.springframework.ide.eclipse.boot.dash.feature.feature.group"/>
           <repository
               url="http://download.springsource.com/release/TOOLS/sts4/update/e4.10/"/>
         </setupTask>
