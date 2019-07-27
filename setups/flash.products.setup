@@ -2049,18 +2049,6 @@
         <description>Explicitly adds Buildshup update site to always get the latest updates</description>
       </setupTask>
       <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="Code Recommenders">
-        <requirement
-            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
-        <repository
-            url="https://download.eclipse.org/recommenders/updates/stable/"/>
-      </setupTask>
-      <setupTask
           xsi:type="setup:CompoundTask"
           name="Spring Tools Suite">
         <setupTask
