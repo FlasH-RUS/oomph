@@ -135,6 +135,13 @@
         xsi:type="setup:CompoundTask"
         filter="(use.idea.keymap=true)"
         name="Idea keymap">
+      <annotation
+          source="http://www.eclipse.org/oomph/setup/UserPreferences">
+        <detail
+            key="/instance/org.eclipse.ui/KEY_CONFIGURATION_ID">
+          <value>record</value>
+        </detail>
+      </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="IntelliJIdeaKeymap4Eclipse">
@@ -215,10 +222,6 @@
         </detail>
         <detail
             key="/instance/org.eclipse.ui.workbench/org.eclipse.ui.commands">
-          <value>record</value>
-        </detail>
-        <detail
-            key="/instance/org.eclipse.ui/KEY_CONFIGURATION_ID">
           <value>record</value>
         </detail>
         <detail
@@ -492,7 +495,7 @@
         <setupTask
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.ui/content_assist_category_order"
-            value="org.eclipse.jdt.ui.templateProposalCategory:65535${0x0}org.eclipse.jdt.ui.swtProposalCategory:65536${0x0}org.eclipse.jdt.ui.javaNoTypeProposalCategory:65537${0x0}org.eclipse.jdt.ui.javaTypeProposalCategory:65538${0x0}org.eclipse.jdt.ui.textProposalCategory:65539${0x0}org.eclipse.jdt.ui.javaAllProposalCategory:65540${0x0}org.codehaus.groovy.eclipse.codeassist.category:65541${0x0}org.codehaus.groovy.eclipse.codeassist.templates.category:65542${0x0}org.eclipse.jdt.ui.defaultProposalCategory:65543${0x0}org.eclipse.jpt.jaxb.ui.jaxbCompletionProposals:65544${0x0}org.eclipse.jpt.jpa.ui.jpaProposalCategory:65545${0x0}org.eclipse.jst.ws.jaxws.ui.jaxwsProposalComputer:65546${0x0}org.eclipse.mylyn.java.ui.javaAllProposalCategory:65547${0x0}org.eclipse.pde.api.tools.ui.apitools_proposal_category:65548${0x0}org.eclipse.recommenders.calls.rcp.proposalCategory.templates:14${0x0}org.eclipse.recommenders.chain.rcp.proposalCategory.chain:15${0x0}org.eclipse.recommenders.completion.rcp.proposalCategory.intelligent:65551${0x0}com.springsource.sts.quickfix.springAnnotationProposals:65552${0x0}org.springsource.ide.eclipse.commons.completions.externalTypesProposalCategory:65553${0x0}org.eclipse.jdt.ui.JavaAllCompletionProposalComputer:65554${0x0}"/>
+            value="org.eclipse.jdt.ui.swtProposalCategory:65535$${0x0}org.eclipse.jdt.ui.javaNoTypeProposalCategory:1$${0x0}org.eclipse.jdt.ui.javaTypeProposalCategory:65537$${0x0}org.eclipse.jdt.ui.textProposalCategory:3$${0x0}org.eclipse.jdt.ui.javaAllProposalCategory:65539$${0x0}org.eclipse.jst.ws.jaxws.ui.jaxwsProposalComputer:65540$${0x0}org.eclipse.mylyn.java.ui.javaAllProposalCategory:65541$${0x0}org.eclipse.pde.api.tools.ui.apitools_proposal_category:65542$${0x0}org.springframework.tooling.boot.ls.springbootjava-completion-computer:65543$${0x0}org.eclipse.jdt.ui.templateProposalCategory:65544$${0x0}"/>
         <setupTask
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.ui/content_assist_disabled_computers"
