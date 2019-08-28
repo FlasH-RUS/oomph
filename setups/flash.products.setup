@@ -151,15 +151,6 @@
             url="https://dl.bintray.com/intellijideakeymap4eclipse/update-site"/>
       </setupTask>
       <setupTask
-          xsi:type="setup:CompoundTask"
-          predecessor="//@products[name='eclipse']/@setupTasks.8/@setupTasks.0"
-          name="org.eclipse.ui">
-        <setupTask
-            xsi:type="setup:PreferenceTask"
-            key="/instance/org.eclipse.ui/KEY_CONFIGURATION_ID"
-            value="IntelliJIdeaKeymap4EclipseScheme"/>
-      </setupTask>
-      <setupTask
           xsi:type="workbench:KeyBindingTask"
           scheme="IntelliJIdeaKeymap4EclipseScheme"
           keys="CTRL+F11"
@@ -800,6 +791,16 @@
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.wst.xml.core/lineWidth"
             value="128"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          predecessor="//@products[name='eclipse']/@setupTasks.8/@setupTasks.0"
+          name="org.eclipse.ui">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.ui/KEY_CONFIGURATION_ID"
+            value="IntelliJIdeaKeymap4EclipseScheme"/>
+        <description>IDEA keymap</description>
       </setupTask>
     </setupTask>
     <version
