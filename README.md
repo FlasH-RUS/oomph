@@ -25,3 +25,8 @@ What's included
 4. Groovy Eclipse
 5. AutoDeriv
 6. Optionally - IDEA keymap
+
+Testing
+-------
+
+Edit `eclipse-inst.ini` in the installer root directory to use local folder with files to update. E.g. `-Doomph.redirection.setups=index:/->file:/home/flash/git/oomph/setups/`
