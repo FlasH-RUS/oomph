@@ -30,3 +30,8 @@ Testing
 -------
 
 Edit `eclipse-inst.ini` in the installer root directory to use local folder with files to update. E.g. `-Doomph.redirection.setups=index:/->file:/home/flash/git/oomph/setups/`
+
+Dev notes
+---------
+
+* How to customize perspective with Oomph: https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/W0c4a14ff363e_436c_9962_2254bb5cbc60/page/Setting%20perspective%20customization%20with%20Oomph
