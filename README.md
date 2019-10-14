@@ -20,11 +20,11 @@ What's included
     * Remote Systems Explorer (RSE)
     * CloudFoundry support (CFT)
     * Plug-in Development Environment (PDE)
-2. Lombok
-3. Spring Tools Suite
-4. Groovy Eclipse
-5. AutoDeriv
-6. Optionally - IDEA keymap
+1. Lombok
+1. Spring Tools Suite
+1. Groovy Eclipse
+1. AutoDeriv
+1. Optionally - IDEA keymap
 
 Testing
 -------
@@ -35,3 +35,6 @@ Dev notes
 ---------
 
 * How to customize perspective with Oomph: https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/W0c4a14ff363e_436c_9962_2254bb5cbc60/page/Setting%20perspective%20customization%20with%20Oomph
+* Note that *.epf file contains escaped XML; it should be processed as follows:
+    1. Remove all `\n` characters (or `\n\r` if doing with Windows machine)
+    1. Unescape the result using e.g. https://www.freeformatter.com/java-dotnet-escape.html
