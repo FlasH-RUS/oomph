@@ -474,10 +474,6 @@
           name="org.eclipse.jdt.ui">
         <setupTask
             xsi:type="setup:PreferenceTask"
-            key="/instance/org.eclipse.jdt.ui/editor_codemining_enabled"
-            value="true"/>
-        <setupTask
-            xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.ui/formatter_profile"
             value="_WebStandard Clean Code"/>
         <setupTask
@@ -784,6 +780,10 @@
         xsi:type="setup:MacroTask"
         id="dev.perspective"
         macro="DevPerspectiveMacro.setup#/"/>
+    <setupTask
+        xsi:type="setup:MacroTask"
+        id="editor.settings"
+        macro="EditorSettingsMacro.setup#/"/>
     <version
         name="oxygen"
         label="Oxygen"
