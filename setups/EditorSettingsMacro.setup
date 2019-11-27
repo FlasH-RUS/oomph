@@ -15,6 +15,58 @@
           key="/instance/org.eclipse.jdt.ui/editor_codemining_enabled">
         <value>record</value>
       </detail>
+      <detail
+          key="/instance/org.eclipse.ui.editors/showWhitespaceCharacters">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.wst.html.core/indentationChar">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.ui.editors/printMarginColumn">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.wst.html.core/indentationSize">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.wst.css.core/lineWidth">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.ui.editors/spacesForTabs">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.wst.xml.core/indentationSize">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.ui.editors/printMargin">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.wst.css.core/indentationSize">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.wst.html.core/lineWidth">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.wst.xml.core/lineWidth">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.wst.xml.core/indentationChar">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.wst.css.core/indentationChar">
+        <value>record</value>
+      </detail>
     </annotation>
     <setupTask
         xsi:type="setup:CompoundTask"
@@ -23,6 +75,74 @@
           xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.jdt.ui/editor_codemining_enabled"
           value="true"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.ui.editors">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ui.editors/printMargin"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ui.editors/printMarginColumn"
+          value="120"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ui.editors/showWhitespaceCharacters"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ui.editors/spacesForTabs"
+          value="true"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.wst.css.core">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.wst.css.core/indentationChar"
+          value="space"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.wst.css.core/indentationSize"
+          value="4"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.wst.css.core/lineWidth"
+          value="120"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.wst.html.core">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.wst.html.core/indentationChar"
+          value="space"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.wst.html.core/indentationSize"
+          value="4"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.wst.html.core/lineWidth"
+          value="120"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.wst.xml.core">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.wst.xml.core/indentationChar"
+          value="space"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.wst.xml.core/indentationSize"
+          value="4"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.wst.xml.core/lineWidth"
+          value="120"/>
     </setupTask>
   </setupTask>
   <description>General editor settings (separated to a macro for maintenance convenience).</description>
