@@ -36,5 +36,5 @@ Dev notes
 
 * How to customize perspective with Oomph: https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/W0c4a14ff363e_436c_9962_2254bb5cbc60/page/Setting%20perspective%20customization%20with%20Oomph
 * Note that *.epf file contains escaped XML; it should be processed as follows:
-    1. Remove all `\n` characters (or `\n\r` if doing with Windows machine)
     1. Unescape the result using e.g. https://www.freeformatter.com/java-dotnet-escape.html
+    1. Minify (e.g. with Atom)
