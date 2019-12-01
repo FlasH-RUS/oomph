@@ -11,19 +11,18 @@ Setting up the installer
 Installing
 ---------------------------------
 1. Once the installer has opened, switch to advanced mode (3-striped button at the top right corner, then "ADVANCED MODE...")
-2. Follow the wizard steps, etc. :)
+1. Follow the wizard steps, etc. :)
+1. After installation you may still need to do several manual steps like:
+    * Switch perspective to "Dev" (which is anyway set to default already).
+    * Switch keyboard layout to IntelliJ (Preferences -> General -> Keys) even if you've selected it during setup.
 
 What's included
 ---------------
-1. Eclipse Oxygen/Photon for Java EE developers with the following plugins excluded:
-    * Data Tools
-    * Remote Systems Explorer (RSE)
+1. Eclipse Oxygen/Photon/2018-09/2018-12/2019-03/2019-06/2019-09 for Java EE developers with the following plugins excluded:
     * CloudFoundry support (CFT)
     * Plug-in Development Environment (PDE)
-1. Lombok
+1. Lombok support (asks for lombok.jar during setup anyway)
 1. Spring Tools Suite
-1. Groovy Eclipse
-1. AutoDeriv
 1. Optionally - IDEA keymap
 
 Testing
