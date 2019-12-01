@@ -34,7 +34,11 @@ Edit `eclipse-inst.ini` in the installer root directory to use local folder with
 Dev notes
 ---------
 
-* How to customize perspective with Oomph: https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/W0c4a14ff363e_436c_9962_2254bb5cbc60/page/Setting%20perspective%20customization%20with%20Oomph
-* Note that *.epf file contains escaped XML; it should be processed as follows:
-    1. Unescape the result using e.g. https://www.freeformatter.com/java-dotnet-escape.html
-    1. Minify (e.g. with Atom)
+* Perspective customization:
+    1. Customize your perspective.
+    1. Export Eclipse preferences to epf file: File -> Export -> Preferences.
+    1. Open epf file and find the perspective key: `/instance/org.eclipse.ui.workbench/<perspective name>_1_e4persp`.
+    1. Convert key value to plain XML:
+        * Unescape. E.g. using https://www.freeformatter.com/java-dotnet-escape.html
+        * Minify. E.g. with Atom.
+    1. Save the same key with plan XML as value in Oomph setup.
