@@ -782,6 +782,10 @@
         macro="DevPerspectiveMacro.setup#/"/>
     <setupTask
         xsi:type="setup:MacroTask"
+        id="debug.perspective"
+        macro="DebugPerspectiveMacro.setup#/"/>
+    <setupTask
+        xsi:type="setup:MacroTask"
         id="editor.settings"
         macro="EditorSettingsMacro.setup#/"/>
     <version
