@@ -22,6 +22,8 @@ What's included
     * CloudFoundry support (CFT)
     * Plug-in Development Environment (PDE)
 1. Lombok support (asks for lombok.jar during setup anyway)
+1. AutoDriv
+1. DevStyle
 1. Spring Tools Suite
 1. Optionally - IDEA keymap
 
