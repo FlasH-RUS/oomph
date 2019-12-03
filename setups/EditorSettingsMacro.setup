@@ -67,10 +67,38 @@
           key="/instance/org.eclipse.wst.css.core/indentationChar">
         <value>record</value>
       </detail>
+      <detail
+          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.timeoutForParameterNameFromAttachedJavadoc">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.jdt.ui/content_assist_disabled_computers">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.jdt.ui/content_assist_category_order">
+        <value>record</value>
+      </detail>
     </annotation>
     <setupTask
         xsi:type="setup:CompoundTask"
+        name="org.eclipse.jdt.core">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.timeoutForParameterNameFromAttachedJavadoc"
+          value="100"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
         name="org.eclipse.jdt.ui">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.jdt.ui/content_assist_category_order"
+          value="org.eclipse.jdt.ui.javaChainProposalCategory:0${0x0}org.eclipse.jdt.ui.templateProposalCategory:1${0x0}org.eclipse.jdt.ui.swtProposalCategory:65537${0x0}org.springframework.tooling.boot.ls.springbootjava-completion-computer:3${0x0}org.eclipse.jdt.ui.javaNoTypeProposalCategory:65539${0x0}org.eclipse.jdt.ui.javaTypeProposalCategory:65540${0x0}org.eclipse.jdt.ui.textProposalCategory:6${0x0}org.eclipse.jdt.ui.javaAllProposalCategory:65542${0x0}org.eclipse.jst.ws.jaxws.ui.jaxwsProposalComputer:65543${0x0}org.eclipse.mylyn.java.ui.javaAllProposalCategory:65544${0x0}org.eclipse.pde.api.tools.ui.apitools_proposal_category:65545${0x0}"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.jdt.ui/content_assist_disabled_computers"
+          value="org.eclipse.jdt.ui.templateProposalCategory${0x0}org.eclipse.jdt.ui.swtProposalCategory${0x0}org.eclipse.jdt.ui.javaNoTypeProposalCategory${0x0}org.eclipse.jdt.ui.javaTypeProposalCategory${0x0}org.eclipse.jdt.ui.textProposalCategory${0x0}org.eclipse.jdt.ui.javaChainProposalCategory${0x0}org.eclipse.jst.ws.jaxws.ui.jaxwsProposalComputer${0x0}"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.jdt.ui/editor_codemining_enabled"
