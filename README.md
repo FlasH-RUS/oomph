@@ -41,5 +41,4 @@ Dev notes
     1. Open epf file and find the perspective key: `/instance/org.eclipse.ui.workbench/<perspective name>_1_e4persp`.
     1. Convert key value to plain XML:
         * Unescape. E.g. using https://www.freeformatter.com/java-dotnet-escape.html
-        * Minify. E.g. with Atom.
     1. Save the same key with plan XML as value in Oomph setup.
