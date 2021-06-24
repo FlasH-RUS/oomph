@@ -156,7 +156,7 @@
         <requirement
             name="com.github.intellijideakeymap4eclipse.feature.feature.group"/>
         <repository
-            url="https://dl.bintray.com/intellijideakeymap4eclipse/update-site"/>
+            url="https://raw.githubusercontent.com/IntelliJIdeaKeymap4Eclipse/IntelliJIdeaKeymap4Eclipse-update-site/main"/>
       </setupTask>
       <setupTask
           xsi:type="workbench:KeyBindingTask"
