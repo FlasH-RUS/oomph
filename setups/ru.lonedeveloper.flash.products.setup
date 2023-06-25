@@ -2284,7 +2284,7 @@
         <repository
             url="https://download.eclipse.org/technology/epp/packages/2023-03/202302021200"/>
         <repository
-            url="https://download.eclipse.org/releases/2023-03/202302031000">
+            url="https://download.eclipse.org/releases/2023-03/202303151000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
